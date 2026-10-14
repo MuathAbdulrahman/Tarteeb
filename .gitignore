@@ -20,3 +20,4 @@ android/gradle/wrapper/gradle-wrapper.jar
 android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
 android/key.properties
 # NOTE: android/ci/debug.keystore is committed on purpose (stable sideload signing).
+ci-logs/
