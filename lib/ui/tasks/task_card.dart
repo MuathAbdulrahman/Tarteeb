@@ -176,7 +176,7 @@ class TaskCard extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('⁦${t.doneSubtasks}/${t.subtasks.length}⁩',
+                          Text('\u2066${t.doneSubtasks}/${t.subtasks.length}\u2069',
                               style: TextStyle(fontSize: 13, color: p.textMuted, fontWeight: FontWeight.w600)),
                           AnimatedRotation(
                             turns: expanded ? 0.5 : 0.0,

@@ -36,11 +36,11 @@ void main() {
     S.setLanguage('ar');
     expect(tr.tabTasks, 'المهام');
     expect(formatDayShort(const Day(2024, 10, 14), today: const Day(2024, 1, 1)), '14 أكتوبر');
-    expect(formatMoney(123450, 'SAR', arabic: true), '⁦1,234.50⁩ ر.س');
+    expect(formatMoney(123450, 'SAR', arabic: true), '\u20661,234.50\u2069 ر.س');
     S.setLanguage('en');
     expect(tr.tabTasks, 'Tasks');
     expect(formatDayShort(const Day(2024, 10, 14), today: const Day(2024, 1, 1)), 'Oct 14');
-    expect(formatMoney(123450, 'SAR', arabic: false), 'SAR ⁦1,234.50⁩');
+    expect(formatMoney(123450, 'SAR', arabic: false), 'SAR \u20661,234.50\u2069');
     S.setLanguage('ar');
   });
 }

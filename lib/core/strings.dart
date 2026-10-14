@@ -126,7 +126,7 @@ class S {
   String followUpOn(String d) => _t('متابعة $d', 'Follow up $d');
   String waitingOnName(String n) => _t('بانتظار: $n', 'Waiting: $n');
   String subtasksProgress(int done, int total) =>
-      _t('المهام الفرعية (⁦$done/$total⁩)', 'Subtasks ($done/$total)');
+      _t('المهام الفرعية (\u2066$done/$total\u2069)', 'Subtasks ($done/$total)');
 
   String priorityLabel(TaskPriority p) => switch (p) {
         TaskPriority.normal => _t('عادية', 'Normal'),
@@ -204,7 +204,7 @@ class S {
   String get noStreakYet => _t('لا توجد سلسلة بعد', 'No streak yet');
   String streakDays(int n) => _t('سلسلة: $n ${n == 1 ? 'يوم' : (n == 2 ? 'يومان' : (n <= 10 ? 'أيام' : 'يوماً'))}', 'Streak: $n day${n == 1 ? '' : 's'}');
   String habitsTodayProgress(int done, int total) =>
-      _t('أنجزت ⁦$done⁩ من ⁦$total⁩ عادات اليوم', '$done of $total habits done today');
+      _t('أنجزت \u2066$done\u2069 من \u2066$total\u2069 عادات اليوم', '$done of $total habits done today');
   String archivedCount(int n) => _t('المؤرشفة ($n)', 'Archived ($n)');
   String get archive => _t('أرشفة', 'Archive');
   String get unarchive => _t('إلغاء الأرشفة', 'Unarchive');
@@ -217,7 +217,7 @@ class S {
   String startedOn(String d) => _t('بدأت في $d', 'Started $d');
   String reminderAt(String t) => _t('تذكير الساعة $t', 'Reminder at $t');
   String monthCompletion(int done, int scheduled) =>
-      _t('هذا الشهر: ⁦$done⁩ من ⁦$scheduled⁩ يوم مجدول حتى الآن', 'This month: $done of $scheduled scheduled days so far');
+      _t('هذا الشهر: \u2066$done\u2069 من \u2066$scheduled\u2069 يوم مجدول حتى الآن', 'This month: $done of $scheduled scheduled days so far');
   String get habitRulesNote => _t(
       'الأيام غير المجدولة لا تقطع السلسلة، ويوم اليوم لا يقطعها قبل انتهائه. لا يمكن تسجيل أيام مستقبلية.',
       'Unscheduled days never break a streak, and today does not break it until it is over. Future days cannot be completed.');

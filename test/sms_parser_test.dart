@@ -25,7 +25,7 @@ void main() {
     });
 
     test('Persian digits, tatweel, diacritics and bidi marks', () {
-      final n = normalizeSms('شـــراء ‏بمبلغٍ ۴۵ ريالاً');
+      final n = normalizeSms('شـــراء \u200fبمبلغٍ ۴۵ ريالاً');
       expect(n.text, 'شراء بمبلغ 45 ريالا');
     });
 

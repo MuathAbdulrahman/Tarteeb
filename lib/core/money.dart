@@ -151,8 +151,8 @@ String currencyLabel(String code, {required bool arabic}) {
 /// Money text safe for bidirectional layout: the number is wrapped in a
 /// left-to-right isolate so it never gets reordered inside Arabic text.
 String formatMoney(int minor, String currency, {required bool arabic}) {
-  const lri = '⁦';
-  const pdi = '⁩';
+  const lri = '\u2066';
+  const pdi = '\u2069';
   final n = formatMinorNumber(minor, currency);
   final label = currencyLabel(currency, arabic: arabic);
   return arabic ? '$lri$n$pdi $label' : '$label $lri$n$pdi';

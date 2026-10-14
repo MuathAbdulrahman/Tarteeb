@@ -463,7 +463,9 @@ final RegExp _refRe = RegExp(
 String _extractReference(NormalizedSms n) {
   final mm = _refRe.firstMatch(n.match);
   if (mm == null) return '';
-  return n.text.substring(mm.start(1), mm.end(1));
+  // The captured reference is the tail of the match; indices align with text.
+  final g = mm.group(1)!;
+  return n.text.substring(mm.end - g.length, mm.end);
 }
 
 // ---------------------------------------------------------------------------

@@ -25,7 +25,8 @@ class KeywordSet {
   static bool _hasArabic(String s) => s.runes.any((r) => r >= 0x0600 && r <= 0x06FF);
 
   bool any(String match) {
-    if (_latinRe != null && _latinRe!.hasMatch(match)) return true;
+    final re = _latinRe;
+    if (re != null && re.hasMatch(match)) return true;
     for (final a in _arabic) {
       if (match.contains(a)) return true;
     }
@@ -38,8 +39,9 @@ class KeywordSet {
     if (to <= from) return -1;
     final seg = match.substring(from, to);
     var best = -1;
-    if (_latinRe != null) {
-      for (final m in _latinRe!.allMatches(seg)) {
+    final re = _latinRe;
+    if (re != null) {
+      for (final m in re.allMatches(seg)) {
         if (m.end > best) best = m.end;
       }
     }

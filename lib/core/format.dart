@@ -61,7 +61,7 @@ String formatMinutes(int minutes) {
   final h12 = h24 % 12 == 0 ? 12 : h24 % 12;
   final pm = h24 >= 12;
   final suffix = _ar ? (pm ? 'م' : 'ص') : (pm ? 'PM' : 'AM');
-  return '⁦$h12:${m.toString().padLeft(2, '0')}⁩ $suffix';
+  return '\u2066$h12:${m.toString().padLeft(2, '0')}\u2069 $suffix';
 }
 
 String formatTimeOf(DateTime dt) => formatMinutes(dt.hour * 60 + dt.minute);
@@ -73,7 +73,7 @@ String formatDateTimeMs(int ms) {
 
 /// Wraps text that may be Latin (merchant names, codes) so it lays out
 /// correctly inside Arabic sentences.
-String isolate(String s) => '⁨$s⁩';
+String isolate(String s) => '\u2068$s\u2069';
 
 /// Masked card / account: "•••• 1234".
-String maskAccount(String last4) => last4.isEmpty ? '' : '⁦•••• $last4⁩';
+String maskAccount(String last4) => last4.isEmpty ? '' : '\u2066•••• $last4\u2069';
