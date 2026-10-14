@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and lower: keep financial data and the SMS queue out of
+     Google/adb backups. Tasks and habits (tarteeb.db) may be backed up. -->
+<full-backup-content>
+    <exclude domain="database" path="finance.db" />
+    <exclude domain="database" path="finance.db-journal" />
+    <exclude domain="database" path="finance.db-wal" />
+    <exclude domain="database" path="finance.db-shm" />
+    <exclude domain="sharedpref" path="tarteeb_sms_queue.xml" />
+    <exclude domain="sharedpref" path="tarteeb_sms_settings.xml" />
+</full-backup-content>

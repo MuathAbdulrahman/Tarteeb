@@ -1,0 +1,84 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Flutter version
+        run: flutter --version
+
+      # Generates the standard Gradle/Android scaffolding for this Flutter
+      # version. Existing files (Kotlin code, manifest, resources, lib/, test/)
+      # are kept as they are.
+      - name: Generate platform scaffolding
+        run: flutter create --platforms=android --org com.tarteeb --project-name tarteeb .
+
+      - name: Get packages
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
+        continue-on-error: true
+
+      - name: Install SQLite for host tests
+        run: sudo apt-get update && sudo apt-get install -y libsqlite3-dev
+
+      - name: Unit and integration tests
+        id: tests
+        run: flutter test --reporter expanded
+        continue-on-error: true
+
+      # Same signing key on every build so new APKs install over old ones
+      # without losing data. Fine for personal sideloading only.
+      - name: Use stable signing key
+        run: |
+          mkdir -p ~/.android
+          cp android/ci/debug.keystore ~/.android/debug.keystore
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Name the APK
+        run: cp build/app/outputs/flutter-apk/app-release.apk "tarteeb-${{ github.run_number }}.apk"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tarteeb-apk-${{ github.run_number }}
+          path: tarteeb-*.apk
+
+      - name: Publish APK as a release (easy download on a phone)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Tarteeb build ${{ github.run_number }}
+          prerelease: true
+          files: tarteeb-*.apk
+          body: |
+            Tests: ${{ steps.tests.outcome }}
+            Install: open this page on your Android phone, download the APK and allow installing from this source.
+
+      - name: Report test result
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "::warning::Some tests failed. The APK was still built; see the 'Unit and integration tests' step."

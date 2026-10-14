@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground: a check mark over two list lines. Original artwork. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M36,52 L47,63 L72,38"
+        android:strokeWidth="8"
+        android:strokeColor="#FFFFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M38,74 L70,74"
+        android:strokeWidth="5"
+        android:strokeColor="#B3FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round" />
+</vector>
