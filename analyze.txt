@@ -1,0 +1,10 @@
+Analyzing Tarteeb...                                            
+
+   info • Dangling library doc comment. Add a 'library' directive after the library comment • lib/core/money.dart:1:1 • dangling_library_doc_comments
+   info • The import of 'dart:typed_data' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/services.dart'. Try removing the import directive • lib/platform/native_bridge.dart:2:8 • unnecessary_import
+   info • The import of 'dart:typed_data' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/foundation.dart'. Try removing the import directive • lib/state/app_state.dart:3:8 • unnecessary_import
+   info • 'onReorder' is deprecated and shouldn't be used. Use the onReorderItem callback instead. The onReorderItem callback adjusts the newIndex parameter for a removed item at the oldIndex. This feature was deprecated after v3.41.0-0.0.pre. Try replacing the use of the deprecated member with the replacement • lib/ui/settings/categories_screen.dart:73:9 • deprecated_member_use
+   info • 'onReorder' is deprecated and shouldn't be used. Use the onReorderItem callback instead. The onReorderItem callback adjusts the newIndex parameter for a removed item at the oldIndex. This feature was deprecated after v3.41.0-0.0.pre. Try replacing the use of the deprecated member with the replacement • lib/ui/tasks/task_detail_screen.dart:250:21 • deprecated_member_use
+   info • 'onReorder' is deprecated and shouldn't be used. Use the onReorderItem callback instead. The onReorderItem callback adjusts the newIndex parameter for a removed item at the oldIndex. This feature was deprecated after v3.41.0-0.0.pre. Try replacing the use of the deprecated member with the replacement • lib/ui/tasks/task_editor_screen.dart:253:15 • deprecated_member_use
+
+6 issues found. (ran in 9.7s)

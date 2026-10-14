@@ -1,0 +1,72 @@
+00:00 +0: loading /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart
+00:00 +0: /home/runner/work/Tarteeb/Tarteeb/test/sms_parser_test.dart: normalizer Arabic-Indic digits and separators become Western, lengths stay aligned
+00:00 +1: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +2: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +3: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +4: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +5: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +6: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +7: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +8: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +9: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +10: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +11: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +12: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +13: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +14: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +15: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +16: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +17: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +18: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +19: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +20: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +21: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +22: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +23: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +24: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +25: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +26: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +27: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +28: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +29: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +30: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +31: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +32: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +33: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +34: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: tasks, subtasks and completion persist across restart
+00:00 +35: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: soft delete and undo
+00:00 +36: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: habit completion rules and prospective schedule change
+00:00 +37: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: SMS ingest historical import, re-import without duplicates, same-amount purchases kept
+00:00 +38: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: SMS ingest receiver delivery + inbox rescan of the same message is saved once
+00:00 +39: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: SMS ingest user corrections and ignored items survive rescans
+00:00 +40: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: SMS ingest processing disabled or permission revoked
+00:00 +41: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: SMS ingest deleting financial data keeps tasks and habits
+00:00 +42: /home/runner/work/Tarteeb/Tarteeb/test/integration_db_test.dart: backup round trip restores tasks and habits; finance only when included
+00:00 +43: /home/runner/work/Tarteeb/Tarteeb/test/widget_test.dart: completion circle toggles only through its own tap target
+00:01 +44: /home/runner/work/Tarteeb/Tarteeb/test/widget_test.dart: completion circle toggles only through its own tap target
+00:01 +45: /home/runner/work/Tarteeb/Tarteeb/test/widget_test.dart: Arabic and English strings and formats
+00:01 +46: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: money parse amounts into integer minor units
+00:01 +47: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: money 0.1 + 0.2 is exact
+00:01 +48: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: money formatting
+00:01 +49: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: finance totals purchases and fees count; transfers, ATM, card payments and income do not
+00:01 +50: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: finance totals refund is shown separately and subtracted once from net
+00:01 +51: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: finance totals items needing review are excluded from totals
+00:01 +52: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: finance totals currencies are never mixed; SAR equivalent is used when present
+00:01 +53: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: finance totals user override can include a transfer as spending
+00:01 +54: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: finance totals range boundaries
+00:02 +55: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: duplicates and refund linking two legitimate purchases with the same amount at different times are not duplicates
+00:02 +56: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: duplicates and refund linking same message key is an exact duplicate
+00:02 +57: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: duplicates and refund linking same bank reference is an exact duplicate
+00:02 +58: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: duplicates and refund linking two alerts for one purchase without bank times -> possible duplicate (reviewable)
+00:02 +59: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: duplicates and refund linking refund links only with sufficient evidence
+00:02 +60: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: habits daily streak, unfinished today does not break it
+00:02 +61: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: habits a missed past day breaks the streak
+00:02 +62: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: habits unscheduled days do not break the streak
+00:02 +63: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: habits future and duplicate completions are rejected
+00:02 +64: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: habits schedule change applies prospectively
+00:02 +65: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: tasks sections; undated tasks are never overdue; follow-up never makes overdue
+00:02 +66: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: tasks calendar: separate due and follow-up dates show on both days; same day shows once
+00:02 +67: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: tasks search covers subtasks and notes
+00:02 +68: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: reminders completed or past reminders are cancelled; future ones scheduled
+00:02 +69: /home/runner/work/Tarteeb/Tarteeb/test/domain_test.dart: reminders habit reminder skips today once completed
+00:02 +70: All tests passed!
