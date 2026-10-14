@@ -79,7 +79,7 @@ class Kw {
   static final completedMarker = KeywordSet([
     'has been', 'have been', 'was', 'successful', 'successfully', 'received', 'debited', 'credited', 'paid',
     'approved', 'completed', 'purchase', 'spent', 'withdrawn',
-    'تم ', 'تمت', 'بنجاح', 'استلام', 'شراء', 'عملية', 'إيداع', 'ايداع',
+    'تم ', 'بنجاح', 'استلام', 'شراء', 'عملية', 'إيداع', 'ايداع',
   ]);
 
   static final reversal = KeywordSet([
